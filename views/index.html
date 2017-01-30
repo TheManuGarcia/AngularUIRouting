@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routerApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular UI Routing</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/scripts/angular.min.js"></script>
+    <script src="/scripts/angular-ui-router.min.js"></script>
+    <script src="/scripts/app.js"></script>
+
+</head>
+<body>
+
+<!--NAVIGATION-->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <!--Href will point to a certain state of the app-->
+        <a class="navbar-brand" ui-sref="#"> AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+<!--MAIN CONTENT-->
+<div class="container">
+
+    <!--WE INJECT OUR CONTENT HERE-->
+    <div ui-view></div>
+</div>
+
+</body>
+</html>
